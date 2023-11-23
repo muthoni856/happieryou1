@@ -9,7 +9,28 @@
         android:id="@+id/LandingFragment"
         android:name="com.example.happieryou.LandingFragment"
         android:label="landing fragment"
-        tools:layout="@layout/landing" />
+        tools:layout="@layout/landing">
+    <action
+        android:id="@+id/action_landing_to_register"
+        app:destination="@id/RegisterFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="com.example.happieryou.RegisterFragment"
+        android:label="register fragment"
+        tools:layout="@layout/register" >
+
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.happieryou.LoginFragment"
+        android:label="loginfragment"
+        tools:layout="@layout/login" />
 
     <!-- Other fragments -->
 

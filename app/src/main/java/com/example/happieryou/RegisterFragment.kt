@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.happieryou.databinding.LandingBinding
+import com.example.happieryou.databinding.RegisterBinding
 
-class LandingFragment : Fragment() {
-    private var _binding: LandingBinding? = null
+class RegisterFragment : Fragment() {
+    private var _binding: RegisterBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -20,7 +20,7 @@ class LandingFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = LandingBinding.inflate(inflater, container, false)
+        _binding = RegisterBinding.inflate(inflater, container, false)
         return binding.root
 
     }
@@ -28,10 +28,10 @@ class LandingFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.registerButton.setOnClickListener {
-            findNavController().navigate(R.id.action_landing_to_register)
+        binding.loginLink.setOnClickListener {
+            findNavController().navigate(R.id.action_register_to_login)
         }
-
+//
 //        binding.button3.setOnClickListener {
 //            findNavController().navigate(R.id.action_FirstFragment_to_ThirdFragment)
 //        }
