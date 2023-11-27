@@ -5,14 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.happieryou.databinding.LoginBinding
-import androidx.navigation.fragment.findNavController
+import com.example.happieryou.databinding.AnxiouspageBinding
 
-class LoginFragment :Fragment() {
-    private var _binding: LoginBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+class AnxiousFragment :Fragment() {
+    private var _binding: AnxiouspageBinding? = null
+
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -20,18 +18,17 @@ class LoginFragment :Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = LoginBinding.inflate(inflater, container, false)
+        _binding = AnxiouspageBinding.inflate(inflater, container, false)
         return binding.root
 
     }
 
- override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-     super.onViewCreated(view, savedInstanceState)
-
-     binding.button3.setOnClickListener {
-         findNavController().navigate(R.id.action_login_to_homepage)
-     }
- }
+//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+//        super.onViewCreated(view, savedInstanceState)
+//
+////        binding.buttonFirst.setOnClickListener {
+////            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+////        }
 ////
 ////        binding.button3.setOnClickListener {
 ////            findNavController().navigate(R.id.action_FirstFragment_to_ThirdFragment)
