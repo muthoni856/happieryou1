@@ -1,0 +1,330 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    tools:context=".HomepageFragment">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#FFE8FB"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="3dp"
+            android:text="happierYou"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="356dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFCECE"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginTop="1dp"
+            android:text="Welcome Back, Sarah"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="353dp"
+        android:layout_height="158dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:background="#EFE7FA"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:text="How Are You Feeling Today?"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="63dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/happy" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="57dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/sad" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="59dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/cool" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="66dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/anxious" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:text="Happy"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:text="Sad"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:text="Cool"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:text="Anxious"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:text="Today's Reads..."
+        android:textColor="#000"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="380dp"
+        android:layout_height="77dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EBFFCA">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="98dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/journal" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="3dp"
+            android:text="How To Start Journaling"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="27dp"
+            android:text="Start Here"
+            android:textColor="#000"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="50dp"
+            android:text="7 min"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="380dp"
+        android:layout_height="77dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="#EBFFCA">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="98dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/rest" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="249dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="3dp"
+            android:text="Take Some Time Off"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="27dp"
+            android:text="Start Here"
+            android:textColor="#000"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="47dp"
+            android:text="5 min"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="380dp"
+        android:layout_height="79dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="#EBFFCA">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="107dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/meditate" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="3dp"
+            android:text="Reduce Irritation"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="27dp"
+            android:text="Start Here"
+            android:textColor="#000"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="47dp"
+            android:text="10 min"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+
+
+    </LinearLayout>
+

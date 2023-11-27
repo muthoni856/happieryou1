@@ -30,8 +30,52 @@
         android:id="@+id/LoginFragment"
         android:name="com.example.happieryou.LoginFragment"
         android:label="loginfragment"
-        tools:layout="@layout/login" />
+        tools:layout="@layout/login" >
+    <action
+        android:id="@+id/action_login_to_homepage"
+        app:destination="@id/HomeFragment"  />
+    </fragment>
 
-    <!-- Other fragments -->
+<!--homepage fragments-->
+    <fragment
+        android:id="@+id/HappyFragment"
+        android:name="com.example.happieryou.HappyFragment"
+        android:label="Happy page"
+        tools:layout="@layout/happypage" />
+    <fragment
+        android:id="@+id/SadFragment"
+        android:name="com.example.happieryou.SadFragment"
+        android:label="Sad page"
+        tools:layout="@layout/sadpage" />
+    <fragment
+        android:id="@+id/CoolFragment"
+        android:name="com.example.happieryou.CoolFragment"
+        android:label="Cool page"
+        tools:layout="@layout/coolpage" />
+    <fragment
+        android:id="@+id/AnxiousFragment"
+        android:name="com.example.happieryou.AnxiousFragment"
+        android:label="Anxious page"
+        tools:layout="@layout/anxiouspage" />
 
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.happieryou.HomepageFragment"
+        android:label="Homepage"
+        tools:layout="@layout/homepage" >
+
+    <action
+        android:id="@+id/action_HomepageFragment_to_HappyFragment"
+        app:destination="@id/HappyFragment" />
+        <action
+            android:id="@+id/action_HomepageFragment_to_SadFragment"
+            app:destination="@id/SadFragment" />
+        <action
+            android:id="@+id/action_HomepageFragment_to_CoolFragment"
+            app:destination="@id/CoolFragment" />
+        <action
+            android:id="@+id/action_HomepageFragment_to_AnxiousFragment"
+            app:destination="@id/AnxiousFragment" />
+
+    </fragment>
 </navigation>
