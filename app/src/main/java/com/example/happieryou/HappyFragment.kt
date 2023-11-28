@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.happieryou.databinding.HappypageBinding
 
 
@@ -26,9 +27,17 @@ class HappyFragment :Fragment() {
     }
 
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+        binding.imageView20.setOnClickListener {
+            findNavController().navigate(R.id.action_HappyFragment_to_HomepageFragment)
+        }
     }
-}
+
+
+        override fun onDestroyView() {
+            super.onDestroyView()
+            _binding = null
+        }
+    }
