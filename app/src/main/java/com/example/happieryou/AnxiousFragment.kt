@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.happieryou.databinding.AnxiouspageBinding
 
 
@@ -23,21 +24,14 @@ class AnxiousFragment :Fragment() {
 
     }
 
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//        super.onViewCreated(view, savedInstanceState)
-//
-////        binding.buttonFirst.setOnClickListener {
-////            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-////        }
-////
-////        binding.button3.setOnClickListener {
-////            findNavController().navigate(R.id.action_FirstFragment_to_ThirdFragment)
-////        }
-////
-////        binding.button4.setOnClickListener {
-////            findNavController().navigate(R.id.action_FirstFragment_to_FourthFragment)
-////        }
-//    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.imageView20.setOnClickListener {
+            findNavController().navigate(R.id.action_AnxiousFragment_to_HomepageFragment)
+        }
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()

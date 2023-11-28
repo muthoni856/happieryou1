@@ -119,4 +119,108 @@
         android:textStyle="bold" />
 
     </FrameLayout>
+
+    <!--Navigation bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="15dp"
+        android:background="#AEE9FF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="405dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="43dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/homeicon" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="60dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/journalicon" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="52dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="57dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/progressicon" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="48dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="57dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/profileicon" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                android:text="Home"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="59dp"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                android:text="Journal"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="39dp"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                android:text="Progress"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                android:text="Profile"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
 </LinearLayout>
