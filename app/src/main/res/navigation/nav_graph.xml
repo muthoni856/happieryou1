@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LandingFragment">
+
+    <fragment
+        android:id="@+id/LandingFragment"
+        android:name="com.example.happieryou.LandingFragment"
+        android:label="landing fragment"
+        tools:layout="@layout/landing">
+    <action
+        android:id="@+id/action_landing_to_register"
+        app:destination="@id/RegisterFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="com.example.happieryou.RegisterFragment"
+        android:label="register fragment"
+        tools:layout="@layout/register" >
+
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.happieryou.LoginFragment"
+        android:label="loginfragment"
+        tools:layout="@layout/login" >
+    <action
+        android:id="@+id/action_login_to_homepage"
+        app:destination="@id/HomeFragment"  />
+    </fragment>
+
+<!--homepage fragments-->
+    <fragment
+        android:id="@+id/HappyFragment"
+        android:name="com.example.happieryou.HappyFragment"
+        android:label="Happy page"
+        tools:layout="@layout/happypage" />
+    <fragment
+        android:id="@+id/SadFragment"
+        android:name="com.example.happieryou.SadFragment"
+        android:label="Sad page"
+        tools:layout="@layout/sadpage" />
+    <fragment
+        android:id="@+id/CoolFragment"
+        android:name="com.example.happieryou.CoolFragment"
+        android:label="Cool page"
+        tools:layout="@layout/coolpage" />
+    <fragment
+        android:id="@+id/AnxiousFragment"
+        android:name="com.example.happieryou.AnxiousFragment"
+        android:label="Anxious page"
+        tools:layout="@layout/anxiouspage" />
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.happieryou.HomepageFragment"
+        android:label="Homepage"
+        tools:layout="@layout/homepage" >
+
+    <action
+        android:id="@+id/action_HomepageFragment_to_HappyFragment"
+        app:destination="@id/HappyFragment" />
+        <action
+            android:id="@+id/action_HomepageFragment_to_SadFragment"
+            app:destination="@id/SadFragment" />
+        <action
+            android:id="@+id/action_HomepageFragment_to_CoolFragment"
+            app:destination="@id/CoolFragment" />
+        <action
+            android:id="@+id/action_HomepageFragment_to_AnxiousFragment"
+            app:destination="@id/AnxiousFragment" />
+
+    </fragment>
+</navigation>
