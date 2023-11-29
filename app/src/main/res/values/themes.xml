@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.Happieryou" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.Happieryou" parent="Theme.AppCompat.DayNight.DarkActionBar" />
+
+    <style name="Theme.Happieryou.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 </resources>
