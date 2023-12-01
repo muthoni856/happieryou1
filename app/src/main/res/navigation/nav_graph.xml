@@ -41,22 +41,39 @@
         android:id="@+id/HappyFragment"
         android:name="com.example.happieryou.HappyFragment"
         android:label="Happy page"
-        tools:layout="@layout/happypage" />
+        tools:layout="@layout/happypage" >
+    <action
+        android:id="@+id/action_HappyFragment_to_HomepageFragment"
+        app:destination="@id/HomeFragment"/>
+    </fragment>
+
     <fragment
         android:id="@+id/SadFragment"
         android:name="com.example.happieryou.SadFragment"
         android:label="Sad page"
-        tools:layout="@layout/sadpage" />
+        tools:layout="@layout/sadpage">
+    <action
+        android:id="@+id/action_SadFragment_to_HomepageFragment"
+        app:destination="@id/HomeFragment"/>
+</fragment>
     <fragment
         android:id="@+id/CoolFragment"
         android:name="com.example.happieryou.CoolFragment"
         android:label="Cool page"
-        tools:layout="@layout/coolpage" />
+        tools:layout="@layout/coolpage">
+        <action
+            android:id="@+id/action_CoolFragment_to_HomepageFragment"
+            app:destination="@id/HomeFragment"/>
+    </fragment>
     <fragment
         android:id="@+id/AnxiousFragment"
         android:name="com.example.happieryou.AnxiousFragment"
         android:label="Anxious page"
-        tools:layout="@layout/anxiouspage" />
+        tools:layout="@layout/anxiouspage">
+        <action
+            android:id="@+id/action_AnxiousFragment_to_HomepageFragment"
+            app:destination="@id/HomeFragment"/>
+    </fragment>
 
     <fragment
         android:id="@+id/HomeFragment"
@@ -76,6 +93,9 @@
         <action
             android:id="@+id/action_HomepageFragment_to_AnxiousFragment"
             app:destination="@id/AnxiousFragment" />
+
+
+
 
     </fragment>
 </navigation>
