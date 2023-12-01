@@ -1,0 +1,114 @@
+<!-- fragment_journal_entries.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FDFCFD">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFE8FB"
+        android:gravity="center"
+        android:text="Journal Entries"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+        <!-- Entry 1 -->
+    <TextView
+        android:id="@+id/entry1"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:layout_marginBottom="16dp"
+        android:background="#EBFFCA"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Monday, 29th April"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+        <!-- Entry 2 -->
+        <!-- Duplicate the entry layout block for each additional entry -->
+    <TextView
+        android:id="@+id/entry2"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_marginBottom="16dp"
+        android:background="#EBFFCA"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Tuesday 27th March"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/entry3"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_marginBottom="16dp"
+        android:background="#EBFFCA"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Wednesday 20th March"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/entry4"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginBottom="16dp"
+        android:background="#EBFFCA"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Thursday 15th March"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/entry5"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginBottom="16dp"
+        android:background="#EBFFCA"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Friday 10th March"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/entry6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#EBFFCA"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="Sunday 5th March"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+
+
+
